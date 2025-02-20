@@ -1,0 +1,269 @@
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.z{
+    border-radius: 50%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.header-logo {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -18px;
+}
+
+.header-logo img {
+    width: 130px;
+}
+
+
+.lgx-inner {
+    position: relative;
+    background-color: #222;
+    color: white;
+    margin-top: -23px;
+}
+
+.lgx-banner-info {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.lgx-banner-info img {
+    width: 100%;
+    height: auto;
+}
+
+.lgx-banner-info h3.subtitle {
+    font-size: 18px;
+}
+
+.lgx-banner-info h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.lgx-banner-info h2.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.hero {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    color: #5c5c5c;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.containerr {
+    padding: 3rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.containerr h1 {
+    font-size: 32px;
+    color: #074842;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.containerr input, 
+.containerr select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 50px;
+}
+
+.containerr input:focus,
+.containerr select:focus {
+    border-color: #FCB416;
+    box-shadow: 0 0 0 0.2rem rgba(252, 180, 22, 0.25);
+    outline: none;
+}
+
+.containerr button {
+    padding: 14px 20px;
+    background-color: #074842;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.containerr button:hover {
+    background-color: #FCB416;
+    transform: translateY(-2px);
+}
+
+
+.footer {
+    background-color: #074842;
+    color: white;
+    padding: 4rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer h3 {
+    color: #FCB416;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    border: none;
+}
+
+.footer a:hover {
+    color: #FCB416;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.contact-info i {
+    color: #FCB416;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    background-color: #FCB416;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: white;
+    color: #FCB416;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .lgx-banner-info h3 {
+        font-size: 24px;
+    }
+
+    .lgx-banner-info h2.title {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .containerr input,
+    .containerr select {
+        width: 100%;
+    }
+
+    .containerr button {
+        width: 100%;
+    }
+}
+
+.invalid-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    text-align: left;
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.is-invalid:focus {
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+}
+
+p {
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    color: chocolate;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Sweet Delights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="career.css">
+  
+</head>
+<body>
+    <header class="header-logo">
+        <img class="v" src="https://img.freepik.com/free-vector/bakery-shop-logo-emblem-template_17005-1482.jpg?ga=GA1.1.1421145603.1739912667&semt=ais_hybrid" alt="Sweet Delights">
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Join Our Team</h1>
+            <p>Be part of something sweet and extraordinary</p>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="section-title">HUMAN<br>RESOURCES</h2>
+                </div>
+                <div class="col-md-1">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-md-7">
+                    <p class="lead mb-4">Join the Sweet Delights Team! We create delightful moments for our customers with our exceptional bakery products. With outlets in prime locations and our commitment to quality and taste, we offer an exciting workplace environment. Why Work With Us? Vibrant Culture: We foster an inclusive and collaborative environment where every team member is valued. Growth Opportunities: Regular training and advancement opportunities help our employees grow professionally. Positive Environment: We ensure a supportive and motivating workplace with team-building activities and open communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="section-title">CAREER<br>FORM</h2>
+                    <p>Please take a few moments to fill this application form and we will contact you at the earliest.</p>
+                </div>
+                <div class="col-md-1">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-md-7">
+                    <form id="careerForm" onsubmit="return validateForm(event)">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="Your First Name" required>
+
+                                <label class="form-label">CNIC</label>
+                                <input type="text" class="form-control" placeholder="XXXXX-XXXXXXX-X" id="cnic" maxlength="15" required>
+
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control" placeholder="Your Email Address" required>
+
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="03001234447" required>
+
+                                <label class="form-label">Upload Resume</label>
+                                <input type="file" class="form-control" required>
+
+                                <label class="form-label">Upload Photo</label>
+                                <input type="file" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Your Last Name" required>
+
+                                <label class="form-label">Qualification/Last Degree</label>
+                                <input type="text" class="form-control" placeholder="Qualification" required>
+
+                                <label class="form-label">University</label>
+                                <input type="text" class="form-control" placeholder="University" required>
+
+                                <label class="form-label">Total Experience(yrs)</label>
+                                <input type="text" class="form-control" placeholder="Total Experience" required>
+
+                                <label class="form-label">Area of interest/ Position applied for</label>
+                                <input type="text" class="form-control" placeholder="Area of interest" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h3>D cake shop</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Bakery Street, Suite 101</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@sweetdelights.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="career.html">Careers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="location.html">Our location</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div class="col-md-3 mb-4">
+                    <h3>Hours</h3>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 7am - 8pm</li>
+                        <li>Saturday: 8am - 8pm</li>
+                        <li>Sunday: 9am - 6pm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom text-center">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script>D cake shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            let isValid = true;
+
+            
+            const form = document.getElementById('careerForm');
+            const inputs = form.querySelectorAll('input[required]');
+
+        
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    input.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    input.classList.remove('is-invalid');
+                }
+            });
+
+            
+            const cnic = document.getElementById('cnic');
+            const cnicRegex = /^\d{5}-\d{7}-\d{1}$/;
+            if (!cnicRegex.test(cnic.value)) {
+                cnic.classList.add('is-invalid');
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Thank you for your application! We will contact you soon.');
+                form.reset();
+            }
+
+            return false;
+        }
+    </script>
+</body>
+</html>

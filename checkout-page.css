@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #074842;
+    --secondary-color: #FCB416;
+}
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: var(--primary-color);
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #053530;
+    border-color: #053530;
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.btn-secondary:hover {
+    background-color: #e0a014;
+    border-color: #e0a014;
+    color: var(--primary-color);
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+.a{
+    height: 300px;
+}

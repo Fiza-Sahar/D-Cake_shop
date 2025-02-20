@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="checkout-page.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cake Shop</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h4 class="mb-0">Shopping Cart</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <img src="https://img.freepik.com/free-vector/sweet-birthday-cake-with-candles_18591-82310.jpg?ga=GA1.1.1421145603.1739912667&semt=ais_hybrid" alt="Cake" class="product-image">
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Delicious Chocolate Cake</h5>
+                                <p class="text-muted">8-inch round cake</p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                                    <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+                                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                                </div>
+                                <p class="text-end mb-0">$<span id="price">35.00</span></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-end">
+                            <h5>Total: $<span id="total">35.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0">Checkout</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Delivery Address</label>
+                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="card" class="form-label">Card Number</label>
+                                <input type="text" class="form-control" id="card" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="expiry" class="form-label">Expiry Date</label>
+                                    <input type="text" class="form-control" id="expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>More Cakes</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img class="a" src="https://img.freepik.com/premium-photo/isolated-whoopie-pie-cake-with-chocolate-strawberries-white-surface_219193-5023.jpg?ga=GA1.1.1421145603.1739912667&semt=ais_hybrid" class="card-img-top" alt="Cake">
+                            <div class="card-body">
+                                <h5 class="card-title">Vanilla Dream Cake</h5>
+                                <p class="card-text">Delicious vanilla cake with buttercream frosting.</p>
+                                <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img  class="a" src="https://img.freepik.com/free-photo/assortment-pieces-cake_114579-85732.jpg?ga=GA1.1.1421145603.1739912667&semt=ais_hybrid" class="card-img-top" alt="Cake">
+                            <div class="card-body">
+                                <h5 class="card-title">Strawberry Delight</h5>
+                                <p class="card-text">Fresh strawberry cake with cream cheese frosting.</p>
+                                <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img class="a"  src="https://img.freepik.com/premium-photo/cake-with-raspberries-chocolate-frosting-raspberry-top_1282598-10423.jpg?ga=GA1.1.1421145603.1739912667&semt=ais_hybrid" class="card-img-top" alt="Cake">
+                            <div class="card-body">
+                                <h5 class="card-title">Lemon Zest Cake</h5>
+                                <p class="card-text">Tangy lemon cake with lemon curd filling.</p>
+                                <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const quantityInput = document.getElementById('quantity');
+            const priceElement = document.getElementById('price');
+            const totalElement = document.getElementById('total');
+            const decreaseBtn = document.getElementById('decrease');
+            const increaseBtn = document.getElementById('increase');
+            const addToCartBtns = document.querySelectorAll('.add-to-cart');
+
+            function updateTotal() {
+                const quantity = parseInt(quantityInput.value);
+                const price = parseFloat(priceElement.textContent);
+                const total = (quantity * price).toFixed(2);
+                totalElement.textContent = total;
+            }
+
+            decreaseBtn.addEventListener('click', function() {
+                if (parseInt(quantityInput.value) > 1) {
+                    quantityInput.value = parseInt(quantityInput.value) - 1;
+                    updateTotal();
+                }
+            });
+
+            increaseBtn.addEventListener('click', function() {
+                quantityInput.value = parseInt(quantityInput.value) + 1;
+                updateTotal();
+            });
+
+            addToCartBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    alert('Item added to cart!');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
